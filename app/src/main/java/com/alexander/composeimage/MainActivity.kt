@@ -71,7 +71,6 @@ fun Greeting(name: String) {
 ){
         Canvas(modifier = Modifier) {
             for (i in 0..Fingers.value - 1) {
-                //drawCircle(Color.Blue, 50f, Offset(X[i], Y[i]))
                 //drawImage(number, Offset(p.x-number.width/2,p.y-number.height/2))
                 drawImage(numbers[i % 5], Offset(X[i]-number.width/2, Y[i]-number.height/2))
             }
